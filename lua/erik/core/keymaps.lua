@@ -1,9 +1,9 @@
-vim.j.mapleader = " "
-local keymap = vim.keymap
+-- set leader key to space
+vim.g.mapleader = " "
 
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "split window vertically" })
+local keymap = vim.keymap -- for conciseness
 
--- General Keymaps -------------------
+------- General Keymaps -------------------
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
@@ -29,4 +29,4 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- copy to clipboard
-keymap.set("v", "<C-c>", [["+y]
+keymap.set("v", "<C-c>", [["+y]])
