@@ -13,7 +13,11 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+-- opt.wrap = false -- disable line wrapping
+opt.wrap = true
+opt.linebreak = true
+opt.breakindent = true
+opt.showbreak = "\u{21AA} "
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
